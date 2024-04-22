@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Drawing App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Ryzen's Artbook</h1>
+    <div class="background-video">
+        <video autoplay loop muted playsinline>
+            <source src="grad.webm" type="video/webm">
+        </video>
+    </div>
+    <canvas id="drawingCanvas" width="1000" height="600"></canvas>
+    <div class="controls">
+        <label for="colorPicker">Color:</label>
+        <input type="color" id="colorPicker" value="#000000">
+        <label for="thickness">Thickness:</label>
+        <input type="range" id="thickness" min="1" max="20" value="5">
+        <button id="clearButton" class="primary"><img src="svg/trash-blank-alt-svgrepo-com.svg" alt="Clear"
+                class="svg-icon" width="20" height="20"></button>
+        <button id="undoButton" class="primary"><img src="svg/undo-left-svgrepo-com.svg" alt="Undo" class="svg-icon"
+                width="25" height="25"></button>
+        <button id="redoButton" class="primary"><img src="svg/undo-right-svgrepo-com.svg" alt="Redo" class="svg-icon"
+                width="25" height="25"></button>
+        <button id="eraserButton" class="primary"><img src="svg/eraser-svgrepo-com.svg" alt="Eraser" class="svg-icon"
+                width="25" height="25"></button>
+        <button id="downloadButton" class="primary"><img src="svg/download-minimalistic-svgrepo-com.svg" alt="Download"
+                class="svg-icon" width="25" height="25"></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

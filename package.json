@@ -1,0 +1,36 @@
+{
+  "name": "Ryzens-Canvas",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "build": "electron-builder"
+  },
+  "build": {
+    "productName": "Ryzen's Canvas",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "index.html",
+      "styles.css",
+      "script.js",
+      "svg/",
+      "grad.webm"
+    ],
+    "win": {
+      "icon": "build/icon.ico"
+    },
+    "mac": {
+      "icon": "build/icon.icns"
+    },
+    "linux": {
+      "icon": "build/icon.png"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.1.4",
+    "electron-builder": "^22.14.13"
+  }
+}
